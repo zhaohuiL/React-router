@@ -32,11 +32,19 @@ module.exports = {
         }]
     },
     devServer: {
-        port: 8000,
-        contentBase: path.join(__dirname, './dist'),
+        contentBase: path.join(__dirname, "dist"),
+        hot: true,
+        open: true,
         historyApiFallback: true,
-        host: '0.0.0.0',
-        hot: true
+        compress: true,
+        overlay: {
+            warnings: false,
+            errors: true,
+        },
+        stats: {
+            colors: true
+        },
+        port: 3001
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
