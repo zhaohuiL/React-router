@@ -38,7 +38,7 @@ module.exports = {
         historyApiFallback: true,
         compress: true,
         overlay: {
-            warnings: false,
+            warnings: true,
             errors: true,
         },
         stats: {
