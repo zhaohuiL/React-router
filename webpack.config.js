@@ -3,7 +3,10 @@ const webpack = require('webpack');
 
 module.exports = {
     /*入口*/
-    entry: path.join(__dirname, 'src/index.js'),
+    entry: [
+        'react-hot-loader/patch',
+        path.join(__dirname, 'src/index.js'),
+    ],
     
     /*输出到dist文件夹，输出文件名字为bundle.js*/
     
@@ -31,6 +34,15 @@ module.exports = {
             loader: 'url-loader?limit=8129'
         }]
     },
+
+    resolve: {
+        alias: {
+            pages: path.join(__dirname, 'src/pages'),
+            component: path.join(__dirname, 'src/component'),
+            router: path.join(__dirname, 'src/router'),
+        },
+    },
+
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         hot: true,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import DocComponent from '../pages/doccomponent/doc';
-import DateComponent from '../pages/datecomponent/date';
+import DocComponent from 'pages/doccomponent/doc';
+import DateComponent from 'pages/datecomponent/date';
 import '../style/router.scss'
 
 const getRouter = () => (
