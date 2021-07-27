@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
-export default class MobileDate extends Component {
+export default class JavaData extends Component {
     render() {
         return (
             <div>
-               <h1>移动日志</h1>
+               <h1>java日志</h1>
             </div>
         )
     }

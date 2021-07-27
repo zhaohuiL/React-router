@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import SqlRules from '../doccomponent/sql_rules/sql_rules';
-import JavaBase from '../doccomponent/java_base/java_base';
-import JavaServer from '../doccomponent/java_server/java_server';
-import RestApi from '../doccomponent/rest_api/rest_api';
-import GitCommit from '../doccomponent/git_commit/git_commit';
-import GitLab from '../doccomponent/gitlab/gitlab';
+import SqlRules from './SqlRules';
+import JavaBase from './JavaBase';
+import JavaServer from './JavaServer';
+import RestApi from './RestApi';
+import GitCommit from './GitCommit';
+import GitLab from './GitLab';
 import Counter from './Counter';
 import '../../style/style.scss'
 

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import JavaDate from '../datecomponent/java/java'
-import WebDate from '../datecomponent/web/web'
-import Mobile from '../datecomponent/mobile/mobile'
+import JavaData from './JavaData'
+import WebData from './WebData'
+import MobileData from './MobileData'
 import '../../style/style.scss'
 
 export default class DateComponent extends Component {
@@ -20,9 +20,9 @@ export default class DateComponent extends Component {
 
                     </ul>
                     <Switch>
-                        <Route exact path="/date" component={WebDate} />
-                        <Route path="/date/java" component={JavaDate} />
-                        <Route exact path="/date/mobile" component={Mobile} />
+                        <Route exact path="/date" component={WebData} />
+                        <Route path="/date/java" component={JavaData} />
+                        <Route exact path="/date/mobile" component={MobileData} />
 
                     </Switch>
                 </div>

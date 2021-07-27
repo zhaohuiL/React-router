@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class WebDate extends Component {
+export default class WebData extends Component {
     render() {
         return (
             <div>
