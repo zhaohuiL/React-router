@@ -6,6 +6,7 @@ import JavaServer from '../doccomponent/java_server/java_server';
 import RestApi from '../doccomponent/rest_api/rest_api';
 import GitCommit from '../doccomponent/git_commit/git_commit';
 import GitLab from '../doccomponent/gitlab/gitlab';
+import Counter from './Counter';
 import '../../style/style.scss'
 
 export default class DocComponent extends Component {
@@ -23,6 +24,7 @@ export default class DocComponent extends Component {
             <li><Link to="/doc/RestApi">Rest api规范</Link></li>
             <li><Link to="/doc/GitCommit">Git提交规范</Link></li>
             <li><Link to="/doc/GitLab">Gitlab CI规范</Link></li>
+            <li><Link to="/doc/counter">计数器</Link></li>
           </ul>
           <Switch>
             <Route exact path="/" component={SqlRules} />
@@ -31,6 +33,7 @@ export default class DocComponent extends Component {
             <Route path="/doc/RestApi" component={RestApi} />
             <Route path="/doc/GitCommit" component={GitCommit} />
             <Route path="/doc/GitLab" component={GitLab} />
+            <Route path="/doc/counter" component={Counter} />
           </Switch>
         </div>
       </Router>
